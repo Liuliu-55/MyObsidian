@@ -52,3 +52,31 @@ $ git checkout -- readme.txt
 ![[Pasted image 20220509110028.png]]
 
 ![[Pasted image 20220509110038.png]]
+
+
+
+## 1.4
+删除git文件
+进入所在文件夹，打开git bash
+```bash
+$ find . -name ".git" | xargs rm -Rf
+```
+或者
+```bash
+$ rm -rf .git
+```
+
+## 1.5 github删除远程仓库
+![[Pasted image 20221030104209.png]]
+![[Pasted image 20221030104217.png]]
+![[Pasted image 20221030104223.png]]
+![[Pasted image 20221030104229.png]]
+
+### 1.5
+win11系统中git运行脚本报错
+![[Pasted image 20221103095116.png]]
+问题：没有安装wget工具
+
+解决：去官网下载
+地址：[GNU Wget 1.21.3 for Windows (eternallybored.org)](https://eternallybored.org/misc/wget/)
+将其放入安装Git目录下 ./Git/mingw64/bin下
